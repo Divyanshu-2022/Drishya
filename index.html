@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="Animation">
+        <table class="styelTable" id="table">
+            <tr class="tr">
+                <th>Column1</th>
+                <th>Column2</th>
+                <th>Column3</th>
+            </tr>
+            <tr id="row1">
+                <td id="A1">1</td>
+                <td id="B1">2</td>
+                <td id="C1">3</td>
+                <td>
+                    <input type="button" class="delete" value="Delete" id="delete" onclick="Delete('1')">
+                </td>
+            </tr>
+            <tr id="row2">
+                <td id="A2">1</td>
+                <td id="B2">2</td>
+                <td id="C2">3</td>
+                <td>
+                    <input type="button" class="delete" value="Delete" id="delete_button" onclick="Delete('2')">
+                </td>
+            </tr>
+            <tr id="row3">
+                <td id="A3">1</td>
+                <td id="B3">2</td>
+                <td id="C3">3</td>
+                <td>
+                    <input type="button" class="delete" value="Delete" id="delete_button" onclick="Delete('3')">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" id="new_A"></td>
+                <td><input type="text" id="new_B"></td>
+                <td><input type="text" id="new_C"></td>
+                <td><input type="button" class="add" onclick="add();" value="Add Row"></td>
+            </tr>
+        </table>
+        <h1 id="Sum"></h1>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
